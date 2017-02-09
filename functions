@@ -1,0 +1,23 @@
+<?php
+ declare (strict_types = 1);
+
+$names =["gosho", "pesho", "misho", "maria"];
+
+function nameExistFun(array $arrayToSurchIn, $surchFor) {
+    
+$nameExist = false;
+foreach ($arrayToSurchIn as $n){
+    
+    if ($n == "$surchFor") {
+        $nameExist = true;
+    }
+}
+return $nameExist;
+}
+
+ var_dump(nameExistFun($names, "godsho"));
+
+// var_dump(nameExistFun(fdsf, "mi"));
+
+// echo nameExistFun("mi", "gofsho");
+
